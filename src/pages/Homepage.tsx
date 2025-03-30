@@ -230,12 +230,12 @@ export default function Homepage() {
 
 
       {/* Featured Image Section */}
-      <div className="w-full py-16 md:py-24 bg-black -mt-32">
+      <div className="w-full py-16 md:py-24 bg-black -mt-15 sm:-mt-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div className="overflow-hidden rounded-2xl shadow-2xl"
           style={{scale: imageScale}}
           >
-            <div className="relative aspect-[16/9] w-full">
+            <div className="relative  w-full">
               <img
                 src="https://cdn.sanity.io/images/hvk0tap5/production/bf901b81573f47b98ac14a4999aadd81be55cb20-1938x1222.png?w=1200&q=95&fit=max&auto=format"
                 alt="Featured workspace automation dashboard"
