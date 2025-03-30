@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* In your global CSS */
+.mesh-long {
+  background-image: radial-gradient(ellipse 100% 100% at 50% 50%, var(--tw-gradient-stops));
+}
+
+.mesh-short {
+  background-image: radial-gradient(ellipse 30% 30% at 50% 50%, var(--tw-gradient-stops));
+}
+
+
+.animate-r {
+  animation: reveal 0.7s ease-in-out;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+    transform: translateY(100%);
+  }
+  /* 50% {
+    opacity: 0;
+    transform: translateY(10%);
+  } */
+  /* 75% {
+    opacity: 1;
+    transform: translateY(10%);
+  } */
+  100% {
+        opacity: 1;
+    filter: blur(1px);
+    transform: translateY(0);
+  }
+}
